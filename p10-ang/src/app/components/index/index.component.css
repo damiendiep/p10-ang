@@ -1,0 +1,26 @@
+.parallax-accueil {
+    height: 400px;
+}
+
+.parallax-accueil > div {
+    width: 100%;
+}
+
+.parallax-accueil > div > img {
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+#form-accueil {
+    margin-left: 45px;
+}
+
+#form-accueil label {
+    margin-right: 7px;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    padding-left: 25px;
+}

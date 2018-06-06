@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+nav {
+    position: fixed;
+}
+
+.nav-wrapper > a , .nav-wrapper > a > img {
+    height: 100%;
+}
