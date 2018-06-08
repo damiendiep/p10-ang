@@ -34,3 +34,7 @@
     padding: 25px;
     border-radius: 45px;
 }
+
+.pagination {
+    text-align: center;
+}

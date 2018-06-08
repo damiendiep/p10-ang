@@ -14,8 +14,14 @@ $(document).ready(function () {
         });
     });
 
+    let closeButton = document.querySelector('.sidenav-close');
+    closeButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        $('.sidenav').sidenav(this.close());
+    });
+
     // Montre/cache la navbar sur un scroll
-    $(window).bind('mousewheel', function(event) {
+    $(window).bind('mousewheel', function (event) {
         if (event.originalEvent.wheelDelta >= 0) {
             $("nav").css({
                 'top': '0px'
