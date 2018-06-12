@@ -1,7 +1,6 @@
 $main-color : #ee6e73;
 
 .parallax-accueil {
-    height: 400px;
     position: relative;
 }
 
@@ -39,4 +38,17 @@ $main-color : #ee6e73;
 
 .pagination {
     text-align: center;
+}
+
+@media only screen and (min-width : 993px) {
+    .parallax-accueil {
+        height: 400px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 993px) {
+    .section {
+        margin-top: 50px;
+    }
 }
