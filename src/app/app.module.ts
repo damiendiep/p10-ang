@@ -6,9 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IndexComponent } from './index/index.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { InscriptionUtilisateurComponent } from './inscription-utilisateur/inscription-utilisateur.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
+  { path: 'inscription', component: InscriptionUtilisateurComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -16,7 +18,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     IndexComponent,
-    NavbarComponent
+    NavbarComponent,
+    InscriptionUtilisateurComponent
   ],
   imports: [
     BrowserModule,
