@@ -8,10 +8,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { InscriptionUtilisateurComponent } from './inscription-utilisateur/inscription-utilisateur.component';
 import { FooterComponent } from './footer/footer.component';
+import { GpsmapComponent } from './gpsmap/gpsmap.component';
+import { AgmCoreModule } from '@agm/core';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
   { path: 'inscription', component: InscriptionUtilisateurComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -21,12 +25,18 @@ const appRoutes: Routes = [
     IndexComponent,
     NavbarComponent,
     InscriptionUtilisateurComponent,
-    FooterComponent
+    FooterComponent,
+    GpsmapComponent,
+    ContactComponent,
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCnwPHZTMDzBEkcEcGSdDq_D5vOQrbMidc'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
