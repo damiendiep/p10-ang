@@ -7,6 +7,7 @@ import { IndexComponent } from './index/index.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { InscriptionUtilisateurComponent } from './inscription-utilisateur/inscription-utilisateur.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     IndexComponent,
     NavbarComponent,
-    InscriptionUtilisateurComponent
+    InscriptionUtilisateurComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
