@@ -1,8 +1,11 @@
+@import "../../styles.scss";
+
 nav {
     position: fixed;
     z-index: 998;
     top: 0;
     transition: ease-in-out 0.3s;
+    background-color:$main-color !important;
 }
 
 .nav-wrapper>a, .nav-wrapper>a>img {
@@ -13,4 +16,8 @@ nav {
     nav {
         top: 0 !important;
     }
+}
+
+nav ul a{
+    color:$text-color !important;
 }

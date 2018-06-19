@@ -1,35 +1,35 @@
+@import "../../styles.scss";
+
 *{
     margin:0;
 }
 
-#block{
+.block-contact{
     width: 75%;
     margin-left:auto;
     margin-right:auto;
     overflow: hidden;
+    height: 94vh;
+}
+
+.sous-block-contact{
+    height:60%;
+    margin:auto;
+    background-color:red;
 }
 
 app-gpsmap{
-    margin:0;
+    width:50%;
+    height:100%;
+    display:inline-block;
+    position: relative;
 }
 
-h2{
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 50px;
-    margin-top: 100px;
+.infos-contact{
+    width:50%;
+    display:inline-block;
     text-align: center;
+    background-color: $main-color;
+    color:$text-color;
+    
 }
-#infos{
-    background-color: #ee6e73;
-    color:white;
-    text-align: center;
-    margin:0;
-    border-top: solid black 1px;
-}
-#sous-block{
-    border:solid black 1px;
-}
-
-
