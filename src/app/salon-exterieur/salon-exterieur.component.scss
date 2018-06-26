@@ -1,0 +1,24 @@
+@import "../../styles.scss";
+
+.result-salons > div > button {
+    float: right;
+}
+
+.result-salons {
+    background-color: $main-color;
+    padding: 25px;
+    border-radius: 45px;
+}
+
+button.btn{
+    background-color:$button-color !important;
+}
+
+.header-titre{
+    display: inline-block;
+}
+.header-additionnel{
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

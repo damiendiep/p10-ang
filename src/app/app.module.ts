@@ -13,6 +13,7 @@ import { AgmCoreModule } from '@agm/core';
 import { ContactComponent } from './contact/contact.component';
 import { CreationSportComponent } from './creation-sport/creation-sport.component';
 import { CreationRoleComponent } from './creation-role/creation-role.component';
+import { SalonExterieurComponent } from './salon-exterieur/salon-exterieur.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     ContactComponent,
     CreationSportComponent,
     CreationRoleComponent,
+    SalonExterieurComponent,
 
   ],
   imports: [
