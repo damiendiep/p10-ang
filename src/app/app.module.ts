@@ -12,12 +12,14 @@ import { GpsmapComponent } from './gpsmap/gpsmap.component';
 import { AgmCoreModule } from '@agm/core';
 import { ContactComponent } from './contact/contact.component';
 import { CreationSportComponent } from './creation-sport/creation-sport.component';
+import { CreationRoleComponent } from './creation-role/creation-role.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
   { path: 'inscription', component: InscriptionUtilisateurComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'creation-sport', component: CreationSportComponent },
+  { path: 'creation-role', component: CreationRoleComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -31,6 +33,7 @@ const appRoutes: Routes = [
     GpsmapComponent,
     ContactComponent,
     CreationSportComponent,
+    CreationRoleComponent,
 
   ],
   imports: [
