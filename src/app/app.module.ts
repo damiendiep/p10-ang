@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CreationSportComponent } from './creation-sport/creation-sport.component';
 import { CreationRoleComponent } from './creation-role/creation-role.component';
 import { SalonExterieurComponent } from './salon-exterieur/salon-exterieur.component';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'creation-sport', component: CreationSportComponent },
   { path: 'creation-role', component: CreationRoleComponent },
+  { path: 'connexion', component: ConnexionComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -36,6 +38,7 @@ const appRoutes: Routes = [
     CreationSportComponent,
     CreationRoleComponent,
     SalonExterieurComponent,
+    ConnexionComponent,
 
   ],
   imports: [
