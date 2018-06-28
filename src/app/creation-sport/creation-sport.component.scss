@@ -5,21 +5,46 @@
     margin:auto;
 }
 
-.block-nouveau-sport{
+.block-creation-sport{
     width:60%;
     padding-top: 25px;
     margin:auto;
 }
 
-.ajouter-sport{
-    padding-top: 25px;
-}
-
-.ajouter-description{
-    padding-top: 25px;
-}
-
 .bouton-validation{
     padding-top: 25px;
     text-align: center
+}
+
+.input-field{
+    margin:50px;
+}
+
+.btn{
+    text-align: center;
+    background-color:$button-color;
+}
+.btn-valider{
+width:20%;
+margin-left:40%;
+margin-right:40%;
+}
+
+.btn-supprimer{
+    margin-left:20px;
+    position: absolute;
+    right:30%; 
+}
+
+.form-suppression-sport{
+    display: inline-block;
+    position: absolute;
+    left:30%;
+}
+
+.suppression-sport{
+    display: inline-block;
+    width:80%;
+    margin:auto;
+    text-align: center;
 }

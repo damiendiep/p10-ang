@@ -1,27 +1,37 @@
 <h2>Ajouter un Sport</h2>
 
-<div class="block-chips">
-  <div class="chip">
-    Football
+<div class="suppression-sport">
+<form action="#" id="form-accueil" class="form-suppression-sport">
+  <label>
+    <input type="checkbox" />
+    <span>Tennis</span>
+  </label>
+  <label>
+    <input type="checkbox" />
+    <span>Football</span>
+  </label>
+  <label>
+    <input type="checkbox" />
+    <span>Volley</span>
+  </label>
+  <label>
+    <input type="checkbox" />
+    <span>Rugby</span>
+  </label>
+</form>
+<a class="waves-effect waves-light btn btn-supprimer">Supprimer</a>
+</div>
+
+<div class="block-creation-sport">
+  <div class="input-field">
+    <input id="prenom" type="text" class="validate">
+    <label for="prenom">Ajouter un Sport</label>
   </div>
-  <div class="chip">
-    Tennis
-  </div>
-  <div class="chip">
-    Footing
+
+  <div class="input-field">
+    <textarea id="textarea1" class="materialize-textarea"></textarea>
+    <label for="textarea1">Description</label>
   </div>
 </div>
 
-<div class="block-nouveau-sport">
-  <div class="ajouter-sport">
-    <input type="text" placeholder="Ajoutez un nouveau Sport">
-  </div>
-
-  <div class="ajouter-description">
-    <input type="text" placeholder="Ajoutez une description">
-  </div>
-
-  <div class="bouton-validation">
-    <input type="button" value="Valider">
-  </div>
-</div>
+<a class="waves-effect waves-light btn btn-valider">Valider</a>
