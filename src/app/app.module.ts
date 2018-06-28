@@ -15,6 +15,8 @@ import { CreationSportComponent } from './creation-sport/creation-sport.componen
 import { CreationRoleComponent } from './creation-role/creation-role.component';
 import { SalonExterieurComponent } from './salon-exterieur/salon-exterieur.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { GestionTerrainComponent } from './gestion-terrain/gestion-terrain.component';
+import { FicheTerrainComponent } from './fiche-terrain/fiche-terrain.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -23,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'creation-sport', component: CreationSportComponent },
   { path: 'creation-role', component: CreationRoleComponent },
   { path: 'connexion', component: ConnexionComponent },
+  { path: 'gestion-terrain', component: GestionTerrainComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -39,6 +42,8 @@ const appRoutes: Routes = [
     CreationRoleComponent,
     SalonExterieurComponent,
     ConnexionComponent,
+    GestionTerrainComponent,
+    FicheTerrainComponent,
 
   ],
   imports: [
