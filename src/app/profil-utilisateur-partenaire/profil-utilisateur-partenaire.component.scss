@@ -1,0 +1,61 @@
+@import "../../styles.scss";
+
+.block-haut{
+    height:300px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+img{
+    display: inline-block;
+    height:100%;
+    width:60%;
+    margin-right:5%;
+}
+
+.gps-map{
+    display: inline-block;
+    width:35%;
+    height:100%;
+}
+
+.btn-photo{
+    width:20%;
+    margin-left:22.5%;
+    margin-top: 10px;
+}
+
+.block-bas{
+    height:300px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%; 
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.block-description{
+display: inline-block;
+height:100%;
+width:60%;
+margin-right:5%;
+}
+
+.block-contact{
+display: inline-block;
+width:35%;
+height:100%;
+}
+
+ul{
+    text-align: center;
+}
+
+.btn-valider{
+background-color: $button-color;
+margin-left:35%;
+margin-right:35%;
+width: 30%;
+text-align: center;
+}

@@ -17,6 +17,9 @@ import { SalonExterieurComponent } from './salon-exterieur/salon-exterieur.compo
 import { ConnexionComponent } from './connexion/connexion.component';
 import { GestionTerrainComponent } from './gestion-terrain/gestion-terrain.component';
 import { FicheTerrainComponent } from './fiche-terrain/fiche-terrain.component';
+import { ProfilUtilisateurComponent } from './profil-utilisateur/profil-utilisateur.component';
+import { ProfilUtilisateurJoueurComponent } from './profil-utilisateur-joueur/profil-utilisateur-joueur.component';
+import { ProfilUtilisateurPartenaireComponent } from './profil-utilisateur-partenaire/profil-utilisateur-partenaire.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -26,6 +29,7 @@ const appRoutes: Routes = [
   { path: 'creation-role', component: CreationRoleComponent },
   { path: 'connexion', component: ConnexionComponent },
   { path: 'gestion-terrain', component: GestionTerrainComponent },
+  { path: 'profil-utilisateur', component: ProfilUtilisateurComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -44,6 +48,9 @@ const appRoutes: Routes = [
     ConnexionComponent,
     GestionTerrainComponent,
     FicheTerrainComponent,
+    ProfilUtilisateurComponent,
+    ProfilUtilisateurJoueurComponent,
+    ProfilUtilisateurPartenaireComponent,
 
   ],
   imports: [
