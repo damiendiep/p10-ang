@@ -5,14 +5,45 @@
       <img src="../../assets/images/terrain-tennis.jpg" alt="Image terrain" class="img-sport">
       <a class="waves-effect waves-light btn btn-valider">Changer Photo</a>
       <div class="details-terrain">
-        <div><span>Sport</span><input type="text" class="text-details"></div>
-        <div><span>Joueurs Max</span><input type="text" class="text-details"></div>
-        <div><span>Prix horaire</span><input type="text" class="text-details"></div>
+        <div>
+          <div class="titre-details">Sport: </div>
+          <a class='dropdown-trigger btn' data-target='dropdown'>Sports</a>
+          <ul id='dropdown' class='dropdown-content'>
+            <li>
+              <a>Tennis</a>
+            </li>
+            <li>
+              <a>Foot</a>
+            </li>
+            <li>
+              <a>Jogging</a>
+            </li>
+            <li>
+              <a>Squash</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="titre-details">Joueurs Max: </div>
+          <input type="text" class="text-details">
+        </div>
+        <div>
+          <div class="titre-details">Prix horaire: </div>
+          <input type="text" class="text-details">
+        </div>
       </div>
     </div>
     <div class="block-droite">
       <h6>Horaires</h6>
-      Lundi Lundi Lundi Lundi Lundi Lundi Lundi
+      <ul>
+        <li>Lundi</li>
+        <li>Mardi</li>
+        <li>Mercredi</li>
+        <li>Jeudi</li>
+        <li>Vendredi</li>
+        <li>Samedi</li>
+        <li>Dimanche</li>
+      </ul>
     </div>
     <a class="waves-effect waves-light btn btn-valider">Valider</a>
   </div>

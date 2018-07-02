@@ -3,7 +3,7 @@
 .terrain{
     display: inline-block;
     background-color: $main-color;
-    height:500px;
+    min-height:500px;
     width:100%;
     margin:2.5%;
     border-radius:15px;
@@ -32,9 +32,8 @@ h5{
 }
 
 .details-terrain{
-    margin-left:5%;
-margin-right: 5%;
-border: solid $border-color 1px;
+    margin-left:15%;
+margin-right: 15%;
 color:$text-color;
 }
 
@@ -55,13 +54,36 @@ width:50%;
     display:inline-block;
     width:50%;
     }
-
-span{
-        display: inline-block;
-        width:40%;
-    }
-
+    
 .text-details{
         display:inline-block;
-        width:60%;
+        width:10%!important;
+        text-align: right;
+        color:$text-color!important;
+        font-weight: bold;
+    }
+
+    .titre-details{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .dropdown-trigger{
+        display:inline-block;
+        margin:0;
+        margin-left:35px;
+    }
+
+    h6{
+        color:$text-color!important;
+        font-weight: bold;
+        width: 60%;
+        margin: auto;
+        text-align: center
+    }
+
+    li{
+        color:$text-color!important;
+        width: 60%;
+        margin: auto;
     }
