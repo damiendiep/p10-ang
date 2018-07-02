@@ -1,0 +1,106 @@
+@import "../../styles.scss";
+
+.statut{
+    background-color:red;
+    height:50px;
+    width:30%;
+    margin-left:35%;
+    margin-right:35%;
+    display: inline-block;
+    text-align: center;
+    border-radius:45px;
+}
+
+.statut-text{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+.block-salon{
+    height:600px;
+    width:60%; 
+    margin:auto;
+    margin-top:30px;
+}
+
+.block-haut-salon{
+height:300px;
+position:relative;
+margin:auto;
+}
+
+.infos-salon{
+    height:100%;
+    width:40%;
+    display:inline-block;
+    padding-left:50px;
+    padding-top:50px;
+    text-align: left;
+    position: absolute;
+}
+
+span{
+    font-weight:bold;
+}
+
+.block-bas-salon{
+    height:300px;
+    margin:auto;
+    position:relative;
+}
+
+.map{
+    height:100%;
+    width:40%;
+    display: inline-block;
+}
+
+.block-bas-droit{
+    height:100%;
+    width:60%;
+    display: inline-block;
+    position: absolute;
+    top:0;
+}
+.input-field{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.joueurs-salon{
+    height:100%;
+    width:60%;
+    right:0;
+    display:inline-block;
+    position: absolute;
+    }
+
+.vignettes-joueur{
+    height:80%;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:7%;
+}    
+
+.vignettes-joueur-haut{
+height:50%;
+}
+
+.vignettes-joueur-bas{
+    height:50%;
+}
+
+.vignette{
+    margin:0;
+    height:50%;
+    width:49%;
+    margin-right:0.5%;
+    display:inline-block;
+    background-color:$main-color;
+    border-radius:15px;
+}
+
+

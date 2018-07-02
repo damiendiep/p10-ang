@@ -1,0 +1,53 @@
+<h2>Salon de Jeu</h2>
+
+<div class="statut block-shadow">
+  <div class="statut-text">C'est parti!</div>
+</div>
+
+<div class="block-salon block-shadow">
+  <div class="block-haut-salon">
+    <div class="infos-salon">
+      <ul>
+        <li>
+          <h5>Informations</h5>
+        </li>
+        <li>
+          <span>Sport:</span> Tennis</li>
+        <li>
+          <span>Adresse:</span> 5 rue de la gare, 59000 Lille</li>
+        <li>
+          <span>Date:</span> 05/05/2018</li>
+        <li>
+          <span>Heure:</span>14h30</li>
+      </ul>
+    </div>
+    <div class="joueurs-salon">
+      <div class="vignettes-joueur">
+        <div class="vignette">
+          <app-vignette-joueur-trouve></app-vignette-joueur-trouve>
+        </div>
+        <div class="vignette">
+          <app-vignette-joueur-trouve></app-vignette-joueur-trouve>
+        </div>
+        <div class="vignette">
+          <app-vignette-joueur-trouve></app-vignette-joueur-trouve>
+        </div>
+        <div class="vignette">
+          <app-vignette-joueur-trouve></app-vignette-joueur-trouve>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-bas-salon">
+    <div class="map">
+      <app-gpsmap></app-gpsmap>
+    </div>
+    <div class="block-bas-droit">
+      <div class="input-field">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Description</label>
+      </div>
+    </div>
+  </div>
+</div>

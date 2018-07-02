@@ -20,6 +20,11 @@ import { FicheTerrainComponent } from './fiche-terrain/fiche-terrain.component';
 import { ProfilUtilisateurComponent } from './profil-utilisateur/profil-utilisateur.component';
 import { ProfilUtilisateurJoueurComponent } from './profil-utilisateur-joueur/profil-utilisateur-joueur.component';
 import { ProfilUtilisateurPartenaireComponent } from './profil-utilisateur-partenaire/profil-utilisateur-partenaire.component';
+import { SalonInterieurComponent } from './salon-interieur/salon-interieur.component';
+import { SalonInterieurAttenteComponent } from './salon-interieur-attente/salon-interieur-attente.component';
+import { SalonInterieurCompletComponent } from './salon-interieur-complet/salon-interieur-complet.component';
+import { VignetteJoueurTrouveComponent } from './vignette-joueur-trouve/vignette-joueur-trouve.component';
+import { VignetteJoueurInconnuComponent } from './vignette-joueur-inconnu/vignette-joueur-inconnu.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -30,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'connexion', component: ConnexionComponent },
   { path: 'gestion-terrain', component: GestionTerrainComponent },
   { path: 'profil-utilisateur', component: ProfilUtilisateurComponent },
+  { path: 'salon-interieur', component: SalonInterieurComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -51,6 +57,11 @@ const appRoutes: Routes = [
     ProfilUtilisateurComponent,
     ProfilUtilisateurJoueurComponent,
     ProfilUtilisateurPartenaireComponent,
+    SalonInterieurComponent,
+    SalonInterieurAttenteComponent,
+    SalonInterieurCompletComponent,
+    VignetteJoueurTrouveComponent,
+    VignetteJoueurInconnuComponent,
 
   ],
   imports: [
