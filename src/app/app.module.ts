@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +26,7 @@ import { SalonInterieurAttenteComponent } from './salon-interieur-attente/salon-
 import { SalonInterieurCompletComponent } from './salon-interieur-complet/salon-interieur-complet.component';
 import { VignetteJoueurTrouveComponent } from './vignette-joueur-trouve/vignette-joueur-trouve.component';
 import { VignetteJoueurInconnuComponent } from './vignette-joueur-inconnu/vignette-joueur-inconnu.component';
+import { SalonService } from './services/salon.service';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -67,12 +69,13 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCnwPHZTMDzBEkcEcGSdDq_D5vOQrbMidc'
     })
   ],
-  providers: [],
+  providers: [SalonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

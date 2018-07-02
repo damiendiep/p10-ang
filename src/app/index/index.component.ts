@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Http} from '@angular/http';
+import {Salon} from '../entity/salon.interface';
+import { map } from 'rxjs/operators';
+import { error } from 'protractor';
+import { Observable } from 'rxjs';
+import { SalonService } from '../services/salon.service';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +13,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
+  salons: Array<any>;
 
-  constructor() { }
+  constructor(private salonService: SalonService) { }
 
   ngOnInit() {
+    this.salonService.getAll().subscribe(data => {
+      this.salons = data;
+    });
+  }
+
+  onSubmit() {
+
   }
 
 }
