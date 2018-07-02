@@ -20,6 +20,7 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
     this.salonService.getAll().subscribe(data => {
       this.salons = data;
+      console.log(this.salons);
     });
   }
 
