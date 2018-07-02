@@ -1,1 +1,47 @@
 @import "../../styles.scss";
+
+.block-complet-joueur{
+    width:80%;
+    margin:auto;
+}
+
+.block-haut-joueur{
+    height:60%;
+}
+.portrait{
+    display:inline-block;
+    width:20%;
+    margin-left:15%;
+    margin-right:15%;
+}
+.infos-joueur{
+    display:inline-block;
+    width:50%;
+    height: 100%;
+    margin-top:120px;
+    text-align: left;
+    position: absolute;
+}
+
+.btn-photo{
+    width:20%;
+    margin-left:15%;
+    margin-top: 10px;
+}
+.block-bas-joueur{
+    height:40%;
+    margin:auto;
+    position: relative;
+}
+
+.block-description{
+    height:100%;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:20px;
+    }
+
+    span{
+        font-weight: bold;
+    }
