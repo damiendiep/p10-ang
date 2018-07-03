@@ -26,10 +26,20 @@ app-gpsmap{
 }
 
 .infos-contact{
+    height:100%;
     width:50%;
     display:inline-block;
+    position: relative;
     text-align: center;
     background-color: $main-color;
     color:$text-color;
+}
 
+.infos-details{
+    height:30%;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:15%;
+    position:absolute;
 }

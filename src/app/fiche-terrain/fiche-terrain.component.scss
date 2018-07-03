@@ -2,6 +2,7 @@
 
 .terrain{
     display: inline-block;
+    position: relative;
     background-color: $main-color;
     min-height:500px;
     width:100%;
@@ -52,7 +53,11 @@ width:50%;
 
 .block-droite{
     display:inline-block;
+    height:40%;
     width:50%;
+    margin:auto;
+    margin-top:1%;
+    position:absolute
     }
     
 .text-details{
@@ -86,4 +91,8 @@ width:50%;
         color:$text-color!important;
         width: 60%;
         margin: auto;
+    }
+
+    .jour{
+        display:inline-block;
     }
