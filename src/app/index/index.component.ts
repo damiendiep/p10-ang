@@ -13,17 +13,16 @@ import { SalonService } from '../services/salon.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-  @Input() salons: Salon[];
+  objectKeys = Object.keys;
+  @Input() salons: any;
 
   constructor(private salonService: SalonService) { }
 
   ngOnInit() {
     this.salonService.findAllSalons().subscribe(data => {
       this.salons = data;
-      const result = Object.keys(data).map(function(key) {
-        return [Number(key), data[key]];
-      });
-      this.salons = data;
+      this.salons = this.salons.salons;
+      console.log(this.salons);
         });
   }
 }
