@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-salon-exterieur',
@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./salon-exterieur.component.scss']
 })
 export class SalonExterieurComponent implements OnInit {
+  @Input() id: number;
+  @Input() date: any;
 
   constructor() { }
 
-id;
-
 
   ngOnInit() {
+    this.date = new Date(this.date);
   }
 
   onClick() {

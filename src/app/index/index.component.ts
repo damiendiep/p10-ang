@@ -14,15 +14,15 @@ import { SalonService } from '../services/salon.service';
 })
 export class IndexComponent implements OnInit {
   objectKeys = Object.keys;
-  @Input() salons: any;
+  @Input() list: any;
 
   constructor(private salonService: SalonService) { }
 
   ngOnInit() {
     this.salonService.findAllSalons().subscribe(data => {
-      this.salons = data;
-      this.salons = this.salons.salons;
-      console.log(this.salons);
+      this.list = data;
+      this.list = this.list.salons;
+      console.log(this.list);
         });
   }
 }

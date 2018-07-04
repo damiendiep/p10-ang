@@ -28,6 +28,7 @@ import { SalonInterieurCompletComponent } from './salon-interieur-complet/salon-
 import { VignetteJoueurTrouveComponent } from './vignette-joueur-trouve/vignette-joueur-trouve.component';
 import { VignetteJoueurInconnuComponent } from './vignette-joueur-inconnu/vignette-joueur-inconnu.component';
 import { SalonService } from './services/salon.service';
+import DatePipe from './pipes/todate.pipe';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -65,6 +66,7 @@ const appRoutes: Routes = [
     SalonInterieurCompletComponent,
     VignetteJoueurTrouveComponent,
     VignetteJoueurInconnuComponent,
+    DatePipe
 
   ],
   imports: [
