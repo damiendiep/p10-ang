@@ -1,7 +1,7 @@
-import { Component, OnInit, Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Http} from '@angular/http';
-import {Salon} from '../entity/salon.interface';
+import { Component, OnInit, Injectable , Input} from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Http } from '@angular/http';
+import { Salon } from '../entity/salon.interface';
 import { map } from 'rxjs/operators';
 import { error } from 'protractor';
 import { Observable } from 'rxjs';
@@ -13,19 +13,17 @@ import { SalonService } from '../services/salon.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-  salons: Array<any>;
+  @Input() salons: Salon[];
 
   constructor(private salonService: SalonService) { }
 
   ngOnInit() {
-    this.salonService.getAll().subscribe(data => {
+    this.salonService.findAllSalons().subscribe(data => {
       this.salons = data;
-      console.log(this.salons);
-    });
+      const result = Object.keys(data).map(function(key) {
+        return [Number(key), data[key]];
+      });
+      this.salons = data;
+        });
   }
-
-  onSubmit() {
-
-  }
-
 }

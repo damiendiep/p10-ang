@@ -9,7 +9,14 @@ export class SalonExterieurComponent implements OnInit {
 
   constructor() { }
 
+id;
+
+
   ngOnInit() {
+  }
+
+  onClick() {
+    console.log(this.id);
   }
 
 }
