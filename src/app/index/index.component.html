@@ -32,7 +32,7 @@
       <a class="waves-effect waves-light btn-large creer-salon">Créer un Salon</a>
     </div>
 
-    <app-salon-exterieur *ngFor = "let salon of list" [id]="salon.id" [date]="salon.date"></app-salon-exterieur>
+    <app-salon-exterieur *ngFor = "let salon of list" [salon]="salon"></app-salon-exterieur>
     <ul class="pagination">
       <li class="disabled">
         <a href="#!">
