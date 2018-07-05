@@ -29,6 +29,7 @@ import { VignetteJoueurTrouveComponent } from './vignette-joueur-trouve/vignette
 import { VignetteJoueurInconnuComponent } from './vignette-joueur-inconnu/vignette-joueur-inconnu.component';
 import { SalonService } from './services/salon.service';
 import DatePipe from './pipes/todate.pipe';
+import { CreerSalonComponent } from './creer-salon/creer-salon.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   { path: 'gestion-terrain', component: GestionTerrainComponent },
   { path: 'profil-utilisateur', component: ProfilUtilisateurComponent },
   { path: 'salon-interieur', component: SalonInterieurComponent },
+  { path: 'creer-salon', component: CreerSalonComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -66,7 +68,8 @@ const appRoutes: Routes = [
     SalonInterieurCompletComponent,
     VignetteJoueurTrouveComponent,
     VignetteJoueurInconnuComponent,
-    DatePipe
+    DatePipe,
+    CreerSalonComponent
 
   ],
   imports: [

@@ -3,16 +3,13 @@
   <h4 class="header-titre col s6">Salon numéro : {{salon.id}}</h4>
   <div class="header-additionnel col s6">
     <div class="header-date">{{salon.date | date: 'dd/MM/yyyy'}}</div>
-    <div class="header-lieu">Club Fun Tennis</div>
-    <div class="header-sport">Tennis</div>
+    <div class="header-lieu">{{salon.libelleLieu}}</div>
+    <div class="header-sport">{{salon.sport}}</div>
     <div class="header-nbr-joueurs">{{salon.nbJoueurs}}/{{salon.joueurMax}}</div>
   </div>
 </div>
   <div>
-    <p class="grey-text text-darken-3 lighten-3 salon-description">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-      unchanged.</p>
+    <p class="grey-text text-darken-3 lighten-3 salon-description">{{salon.description}}</p>
    <a [routerLink]="['/salon-interieur']" class="btn waves-effect waves-light btn-voir">Voir</a>
   </div>
 </div>

@@ -29,7 +29,7 @@
           <span>Rugby</span>
         </label>
       </form>
-      <a class="waves-effect waves-light btn-large creer-salon">Créer un Salon</a>
+      <a class="waves-effect waves-light btn-large creer-salon" [routerLink]="['/creer-salon']">Créer un Salon</a>
     </div>
 
     <app-salon-exterieur *ngFor = "let salon of list" [salon]="salon"></app-salon-exterieur>
