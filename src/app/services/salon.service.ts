@@ -16,7 +16,6 @@ export class SalonService {
     }
 
     public findAllSalons() {
-        console.log('findAllSalons coucou');
         return this.http.get<Salon[]>(this.salonUrl);
     }
 
