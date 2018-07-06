@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Salon } from '../entity/salon.interface';
+import { Utilisateur } from '../entity/utilisateur.interface';
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class SalonService {
+export class ConnexionService {
     private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    private salonUrl = 'http://localhost:8080/api/salons';
+    private connexionUrl = 'http://localhost:8080/api/connexion';
     constructor(private http: HttpClient) {
     }
 
     getAll(): Observable<any> {
-        return this.http.get(this.salonUrl);
+        return this.http.get(this.connexionUrl);
     }
 
-    public findAllSalons() {
-        return this.http.get<Salon[]>(this.salonUrl);
+    public findByPseudoAndPassword() {
+        return this.http.get<Utilisateur>(this.connexionUrl);
     }
 }

@@ -1,22 +1,21 @@
 <h2>Merci de vous connecter</h2>
 
-<div class="block-principal-connexion">
+<form (submit)="loginUtilisateur($event)">
+  <div class="block-principal-connexion">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Login</label>
+      </div>
+    </div>
 
     <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
       </div>
-
-    <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-
-      <a href="" class="lien-inscription">Inscription</a>
-
-      <a class="waves-effect waves-light btn">Valider</a>
-</div>
+    </div>
+    <input type="submit" value="valider" class="waves-effect waves-light btn btn-valider">
+    <a href="" class="lien-inscription">Inscription</a>
+  </div>
+</form>
