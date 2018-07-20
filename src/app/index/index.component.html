@@ -20,19 +20,12 @@
           <input type="checkbox" />
           <span>Football</span>
         </label>
-        <label>
-          <input type="checkbox" />
-          <span>Volley</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          <span>Rugby</span>
-        </label>
+
       </form>
       <a class="waves-effect waves-light btn-large creer-salon" [routerLink]="['/creer-salon']">Créer un Salon</a>
     </div>
 
-    <app-salon-exterieur *ngFor = "let salon of list" [salon]="salon"></app-salon-exterieur>
+    <app-salon-exterieur *ngFor="let salon of listeSalons" [salon]="salon"></app-salon-exterieur>
     <ul class="pagination">
       <li class="disabled">
         <a href="#!">
@@ -42,18 +35,7 @@
       <li class="active">
         <a href="#!">1</a>
       </li>
-      <li class="waves-effect">
-        <a href="#!">2</a>
-      </li>
-      <li class="waves-effect">
-        <a href="#!">3</a>
-      </li>
-      <li class="waves-effect">
-        <a href="#!">4</a>
-      </li>
-      <li class="waves-effect">
-        <a href="#!">5</a>
-      </li>
+
       <li class="waves-effect">
         <a href="#!">
           <i class="material-icons">chevron_right</i>

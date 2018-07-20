@@ -14,6 +14,7 @@ export class SalonExterieurComponent implements OnInit {
 
   ngOnInit() {
     this.salon.date = new Date(this.salon.date);
+    console.log(this.salon);
   }
 
 }

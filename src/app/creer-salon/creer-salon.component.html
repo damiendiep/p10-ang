@@ -1,1 +1,9 @@
-<h2>Nouveau Salon!</h2>>
+<h2>Nouveau Salon!</h2>
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <input name="sport" placeholder="Sport" type="text" id="sport" ngModel>
+  <input name="club" placeholder="Club" type="text" id="club" ngModel>
+  <input name="joueurMax" placeholder="JoueurMax" type="text" id="joueurMax" ngModel>
+  <input name="description" placeholder="Description" type="text" id="description" ngModel>
+  <button type="submit">Valider</button>
+</form>

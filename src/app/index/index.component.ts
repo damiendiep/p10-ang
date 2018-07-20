@@ -1,4 +1,4 @@
-import { Component, OnInit, Injectable , Input} from '@angular/core';
+import { Component, OnInit, Injectable, Input } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http } from '@angular/http';
 import { Salon } from '../entity/salon.interface';
@@ -14,15 +14,17 @@ import { SalonService } from '../services/salon.service';
 })
 export class IndexComponent implements OnInit {
   objectKeys = Object.keys;
-  @Input() list: any;
+  // @Input()
+  listeSalons: any;
 
   constructor(private salonService: SalonService) { }
 
   ngOnInit() {
-    this.salonService.findAllSalons().subscribe(data => {
-      this.list = data;
-      this.list = this.list.salons;
-      console.log(this.list);
-        });
+    // this.salonService.findAllSalons().subscribe(data => {
+    //   this.list = data;
+    //   this.list = this.list.salons;
+    //   console.log(this.list);
+    // });
+    this.listeSalons = this.salonService.listeSalons;
   }
 }
