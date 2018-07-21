@@ -8,6 +8,7 @@ import { Salon } from '../entity/salon.interface';
 })
 export class SalonExterieurComponent implements OnInit {
   @Input() salon: Salon;
+  route: any;
 
   constructor() { }
 
@@ -17,4 +18,14 @@ export class SalonExterieurComponent implements OnInit {
     console.log(this.salon);
   }
 
+  sendToSalon(id: any) {
+    if (id = 1) {
+      let route = "['/salon1-interieur/']";
+    } else if (id = 2) {
+      let route = "['/salon2-interieur/']";
+    } else {
+      let route = "['/salon-interieur/']";
+    }
+    return this.route;
+  }
 }
