@@ -32,6 +32,8 @@ import DatePipe from './pipes/todate.pipe';
 import { CreerSalonComponent } from './creer-salon/creer-salon.component';
 import { Salon1ExterieurComponent } from './salon1-exterieur/salon1-exterieur.component';
 import { Salon2ExterieurComponent } from './salon2-exterieur/salon2-exterieur.component';
+import { Salon1InterieurComponent } from './salon1-interieur/salon1-interieur.component';
+import { Salon2InterieurComponent } from './salon2-interieur/salon2-interieur.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -44,6 +46,8 @@ const appRoutes: Routes = [
   { path: 'profil-utilisateur', component: ProfilUtilisateurComponent },
   { path: 'salon-interieur', component: SalonInterieurComponent },
   { path: 'creer-salon', component: CreerSalonComponent },
+  { path: 'salon-interieur/1', component: Salon1InterieurComponent },
+  { path: 'salon-interieur/2', component: Salon2InterieurComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];
 
@@ -73,7 +77,9 @@ const appRoutes: Routes = [
     DatePipe,
     CreerSalonComponent,
     Salon1ExterieurComponent,
-    Salon2ExterieurComponent
+    Salon2ExterieurComponent,
+    Salon1InterieurComponent,
+    Salon2InterieurComponent
 
   ],
   imports: [
