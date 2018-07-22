@@ -34,6 +34,9 @@ import { Salon1ExterieurComponent } from './salon1-exterieur/salon1-exterieur.co
 import { Salon2ExterieurComponent } from './salon2-exterieur/salon2-exterieur.component';
 import { Salon1InterieurComponent } from './salon1-interieur/salon1-interieur.component';
 import { Salon2InterieurComponent } from './salon2-interieur/salon2-interieur.component';
+import { Joueur1Component } from './joueur1/joueur1.component';
+import { Joueur2Component } from './joueur2/joueur2.component';
+import { Joueur3Component } from './joueur3/joueur3.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: IndexComponent },
@@ -79,7 +82,10 @@ const appRoutes: Routes = [
     Salon1ExterieurComponent,
     Salon2ExterieurComponent,
     Salon1InterieurComponent,
-    Salon2InterieurComponent
+    Salon2InterieurComponent,
+    Joueur1Component,
+    Joueur2Component,
+    Joueur3Component
 
   ],
   imports: [

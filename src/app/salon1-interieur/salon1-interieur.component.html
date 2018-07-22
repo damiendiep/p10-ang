@@ -1,3 +1,56 @@
-<h1>
-  salon1-interieur works!
-<h1>
+<h2>Salon de Jeu {{salon.id}}</h2>
+
+<div class="statut block-shadow">
+  <div class="statut-text">En attente de joueurs</div>
+</div>
+
+<div class="block-salon block-shadow">
+  <div class="block-haut-salon">
+    <div class="infos-salon">
+      <ul>
+        <li>
+          <h4>Informations</h4>
+        </li>
+        <li>
+          <span>Sport:</span> {{salon.Sport}}</li>
+        <li>
+          <span>Club:</span> {{salon.Club}}</li>
+        <li>
+          <span>Date:</span> {{salon.Date}}</li>
+      </ul>
+      <a class="waves-effect waves-light btn-large rejoindre">Rejoindre la partie</a>
+    </div>
+    <div class="joueurs-salon">
+      <div class="vignettes-joueur">
+        <div class="vignette">
+          <app-joueur1></app-joueur1>
+        </div>
+        <div class="vignette">
+            <app-joueur2></app-joueur2>
+        </div>
+        <div class="vignette">
+          <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
+          <app-vignette-joueur-trouve hidden="true"></app-vignette-joueur-trouve>
+        </div>
+        <div class="vignette">
+          <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-bas-salon">
+    <div class="map">
+      <app-gpsmap></app-gpsmap>
+    </div>
+    <div class="block-bas-droit">
+      <div class="input-field">
+        <div id="presentation-joueur" class="materialize-textarea block-shadow">
+          <h6>Présentation:</h6>
+          {{salon.description}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

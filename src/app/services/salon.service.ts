@@ -13,6 +13,7 @@ export class SalonService {
             club: 'Tennis Fun Club',
             date: new Date('2017/08/15'),
             joueurMax: 4,
+            nbJoueurs:2,
             description: `Bonjour! Je m\'appelle David, je cherche 3 joueurs
             niveau débutant / intermédiaire pour faire une partie de Tennis
             le Vendredi 27 Juillet au Tennis Fun Club à Villeneuve:) `
@@ -22,6 +23,7 @@ export class SalonService {
             club: 'Tennis Fun Club',
             date: new Date('2017/08/15'),
             joueurMax: 4,
+            nbJoueurs:3,
             description: `Bonjour! Je m\'appelle David, je cherche 3 joueurs
             niveau débutant / intermédiaire pour faire une partie de Tennis
             le Vendredi 27 Juillet au Tennis Fun Club à Villeneuve:) `
@@ -48,6 +50,7 @@ export class SalonService {
             club: '',
             date: new Date(),
             joueurMax: 0,
+            nbJoueurs:1,
             description: ''
         };
         nouveauSalon.id = this.listeSalons[(this.listeSalons.length - 1)].id + 1;

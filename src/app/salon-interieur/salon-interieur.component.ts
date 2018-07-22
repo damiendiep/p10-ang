@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Salon } from '../entity/salon.interface';
 
 @Component({
   selector: 'app-salon-interieur',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./salon-interieur.component.scss']
 })
 export class SalonInterieurComponent implements OnInit {
+
+  @Input() salon: Salon;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-<h2>Salon de Jeu</h2>
+<h2>Salon de Jeu {{salon.id}}</h2>
 
 <div class="statut block-shadow">
   <div class="statut-text">En attente de joueurs</div>
@@ -12,14 +12,13 @@
           <h4>Informations</h4>
         </li>
         <li>
-          <span>Sport:</span> Tennis</li>
+          <span>Sport:</span> {{salon.Sport}}</li>
         <li>
-          <span>Adresse:</span> 5 rue de la gare, 59000 Lille</li>
+          <span>Club:</span> {{salon.Club}}</li>
         <li>
-          <span>Date:</span> 05/05/2018</li>
-        <li>
-          <span>Heure:</span>14h30</li>
+          <span>Date:</span> {{salon.Date}}</li>
       </ul>
+      <a class="waves-effect waves-light btn-large rejoindre" disabled="true">Rejoindre la partie</a>
     </div>
     <div class="joueurs-salon">
       <div class="vignettes-joueur">
@@ -47,10 +46,10 @@
       <div class="input-field">
         <div id="presentation-joueur" class="materialize-textarea block-shadow">
           <h6>Présentation:</h6>
-          Salut, je m'appelle Jean et j'adore le Tennis. J'ai commencé il y a une semaine et je cherche des gens avec qui jouer afin
-          de progresser en s'amusant. Je suis dispo du Lundi au Vendredi après 17h dans les alentours de Villeneuve d'Ascq.
+          {{salon.description}}
         </div>
       </div>
     </div>
   </div>
 </div>
+<app-footer></app-footer>
