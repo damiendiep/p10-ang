@@ -1,7 +1,8 @@
 <h2>Salon de Jeu {{salon.id}}</h2>
 
-<div class="statut block-shadow">
-  <div class="statut-text">En attente de joueurs</div>
+<div class="">
+  <div class="statut-text statut-no block-shadow" *ngIf="!rejoindre2">En attente de joueurs</div>
+  <div class="statut-text statut-yes block-shadow" *ngIf="rejoindre2">Ca match!</div>
 </div>
 
 <div class="block-salon block-shadow">
@@ -18,7 +19,8 @@
         <li>
           <span>Date:</span> {{salon.Date}}</li>
       </ul>
-      <a class="waves-effect waves-light btn-large rejoindre">Rejoindre la partie</a>
+      <a class="waves-effect waves-light btn-large rejoindre" (click)="rejoindreSalle()" *ngIf="!rejoindre2">Rejoindre la partie</a>
+      <a class="waves-effect waves-light btn-large rejoindre" (click)="quitterSalle()" *ngIf="rejoindre2">Quitter la partie</a>
     </div>
     <div class="joueurs-salon">
       <div class="vignettes-joueur">
@@ -32,8 +34,8 @@
             <app-joueur3></app-joueur3>
         </div>
         <div class="vignette">
-          <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
-          <app-vignette-joueur-trouve hidden="true"></app-vignette-joueur-trouve>
+          <app-vignette-joueur-inconnu *ngIf="!rejoindre2"></app-vignette-joueur-inconnu>
+          <app-vignette-joueur-trouve *ngIf="rejoindre2"></app-vignette-joueur-trouve>
         </div>
       </div>
     </div>

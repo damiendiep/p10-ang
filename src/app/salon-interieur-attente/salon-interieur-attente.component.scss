@@ -67,9 +67,9 @@ span{
     #presentation-joueur {
         margin-top: 25px;
         padding: 10px;
-        background-color: $main-color;
+        background-color: $salon-color;
         border-radius: 15px;
-        color: $text-color;
+        color: black;
       }
 }
 .input-field{
@@ -108,7 +108,7 @@ height:50%;
     width:49%;
     margin-right:0.5%;
     display:inline-block;
-    background-color:$main-color;
+    background-color:$salon-color;
     border-radius:15px;
 }
 

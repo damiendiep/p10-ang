@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.statut{
+.statut-no{
     background-color:red;
     height:50px;
     width:30%;
@@ -11,10 +11,22 @@
     border-radius:45px;
 }
 
+.statut-yes{
+    background-color:#8FC70C;
+    height:50px;
+    width:30%;
+    margin-left:35%;
+    margin-right:35%;
+    display: inline-block;
+    text-align: center;
+    border-radius:45px;
+}
+
 .statut-text{
-    margin-top:10px;
+    margin-top:20px;
     margin-bottom:10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .block-salon{
@@ -67,9 +79,9 @@ span{
     #presentation-joueur {
         margin-top: 25px;
         padding: 10px;
-        background-color: $main-color;
+        background-color: $salon-color;
         border-radius: 15px;
-        color: $text-color;
+        color: black;
       }
 }
 .input-field{
@@ -108,10 +120,11 @@ height:50%;
     width:49%;
     margin-right:0.5%;
     display:inline-block;
-    background-color:$main-color;
+    background-color:$salon-color;
     border-radius:15px;
 }
 
 .rejoindre{
     margin-left:30%;
+    background-color:$button-color;
 }

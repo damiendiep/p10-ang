@@ -30,6 +30,7 @@
   width: 20%;
   margin-left: 15%;
   margin-top: 10px;
+  background-color:$button-color;
 }
 
 .block-bas-joueur {
@@ -53,9 +54,9 @@ span {
 #presentation-joueur {
   margin-top: 25px;
   padding: 10px;
-  background-color: $main-color;
+  background-color: $salon-color;
   border-radius: 15px;
-  color: $text-color;
+  color: black;
 }
 
 #block-complet{

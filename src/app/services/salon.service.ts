@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class SalonService {
+    rejoindre1 = false;
     listeSalons = [
         {
             id: 1,
@@ -13,8 +14,8 @@ export class SalonService {
             club: 'Tennis Fun Club',
             date: new Date('2017/08/15'),
             joueurMax: 4,
-            nbJoueurs:2,
-            description: `Bonjour! Je m\'appelle David, je cherche 3 joueurs
+            nbJoueurs: 2,
+            description: `Bonjour! Je m\'appelle Antoine, je cherche 3 joueurs
             niveau débutant / intermédiaire pour faire une partie de Tennis
             le Vendredi 27 Juillet au Tennis Fun Club à Villeneuve:) `
         }, {
@@ -23,8 +24,8 @@ export class SalonService {
             club: 'Tennis Fun Club',
             date: new Date('2017/08/15'),
             joueurMax: 4,
-            nbJoueurs:3,
-            description: `Bonjour! Je m\'appelle David, je cherche 3 joueurs
+            nbJoueurs: 3,
+            description: `Bonjour! Je m\'appelle Antoine, je cherche 3 joueurs
             niveau débutant / intermédiaire pour faire une partie de Tennis
             le Vendredi 27 Juillet au Tennis Fun Club à Villeneuve:) `
         },
@@ -43,14 +44,14 @@ export class SalonService {
         return this.http.get<Salon[]>(this.salonUrl);
     }
 
-    public CreateSalon( sport: string, club: string, joueurMax: number, description: string) {
+    public CreateSalon(sport: string, club: string, joueurMax: number, description: string) {
         const nouveauSalon = {
             id: 0,
             sport: '',
             club: '',
             date: new Date(),
             joueurMax: 0,
-            nbJoueurs:1,
+            nbJoueurs: 1,
             description: ''
         };
         nouveauSalon.id = this.listeSalons[(this.listeSalons.length - 1)].id + 1;
@@ -59,5 +60,15 @@ export class SalonService {
         nouveauSalon.joueurMax = joueurMax;
         nouveauSalon.description = description;
         this.listeSalons.push(nouveauSalon);
+    }
+
+
+    public rejoindreSalon1() {
+        if (this.rejoindre1 = false) {
+            this.rejoindre1 = true;
+        } else {
+            this.rejoindre1 = false;
+        }
+        return this.rejoindre1;
     }
 }

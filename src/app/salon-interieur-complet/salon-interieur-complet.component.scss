@@ -2,7 +2,7 @@
 
 @import "../../styles.scss";
 
-.statut{
+.statut-yes{
     background-color:green;
     height:50px;
     width:30%;
@@ -101,6 +101,6 @@ height:50%;
     width:49%;
     margin-right:0.5%;
     display:inline-block;
-    background-color:$main-color;
+    background-color:$salon-color;
     border-radius:15px;
 }

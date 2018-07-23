@@ -18,7 +18,8 @@
         <li>
           <span>Date:</span> {{salon.Date}}</li>
       </ul>
-      <a class="waves-effect waves-light btn-large rejoindre">Rejoindre la partie</a>
+      <button type="button" class="waves-effect waves-light btn-large rejoindre" (click)="rejoindreSalle()" *ngIf="!rejoindre1">Rejoindre la partie</button>
+      <button type="button" class="waves-effect waves-light btn-large rejoindre" (click)="quitterSalle()" *ngIf="rejoindre1">Quitter la partie</button>
     </div>
     <div class="joueurs-salon">
       <div class="vignettes-joueur">
@@ -29,8 +30,8 @@
             <app-joueur2></app-joueur2>
         </div>
         <div class="vignette">
-          <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
-          <app-vignette-joueur-trouve hidden="true"></app-vignette-joueur-trouve>
+          <app-vignette-joueur-inconnu *ngIf="!rejoindre1"></app-vignette-joueur-inconnu>
+          <app-vignette-joueur-trouve *ngIf="rejoindre1"></app-vignette-joueur-trouve>
         </div>
         <div class="vignette">
           <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
