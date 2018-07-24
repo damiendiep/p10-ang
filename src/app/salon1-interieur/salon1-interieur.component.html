@@ -1,7 +1,11 @@
-<h2>Salon de Jeu {{salon.id}}</h2>
+<h2>Salon de Jeu {{id}}</h2>
 
-<div class="statut block-shadow">
+<div class="statut block-shadow pas-complet" *ngIf="!complet">
   <div class="statut-text">En attente de joueurs</div>
+</div>
+
+<div class="statut block-shadow complet" *ngIf="complet">
+  <div class="statut-text">Ca match!</div>
 </div>
 
 <div class="block-salon block-shadow">
@@ -12,21 +16,21 @@
           <h4>Informations</h4>
         </li>
         <li>
-          <span>Sport:</span> {{salon.Sport}}</li>
+          <span>Sport:</span> {{sport}}</li>
         <li>
-          <span>Club:</span> {{salon.Club}}</li>
+          <span>Club:</span> {{club}}</li>
         <li>
-          <span>Date:</span> {{salon.Date}}</li>
+          <span>Date:</span> {{date | date}}</li>
       </ul>
       <button type="button" class="waves-effect waves-light btn-large rejoindre" (click)="rejoindreSalle()" *ngIf="!rejoindre1">Rejoindre la partie</button>
       <button type="button" class="waves-effect waves-light btn-large rejoindre" (click)="quitterSalle()" *ngIf="rejoindre1">Quitter la partie</button>
     </div>
     <div class="joueurs-salon">
       <div class="vignettes-joueur">
-        <div class="vignette">
-          <app-joueur1></app-joueur1>
+        <div>
+          <app-joueur1 *ngFor="let joueur of joueurs" [prenom]="joueur.prenom" [photo]="joueur.photo"></app-joueur1>
         </div>
-        <div class="vignette">
+        <!-- <div class="vignette"> 
             <app-joueur2></app-joueur2>
         </div>
         <div class="vignette">
@@ -35,7 +39,7 @@
         </div>
         <div class="vignette">
           <app-vignette-joueur-inconnu></app-vignette-joueur-inconnu>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -48,7 +52,7 @@
       <div class="input-field">
         <div id="presentation-joueur" class="materialize-textarea block-shadow">
           <h6>Présentation:</h6>
-          {{salon.description}}
+          {{description}}
         </div>
       </div>
     </div>

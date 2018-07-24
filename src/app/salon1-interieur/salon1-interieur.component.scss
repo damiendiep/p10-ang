@@ -1,7 +1,6 @@
 @import "../../styles.scss";
 
 .statut{
-    background-color:red;
     height:50px;
     width:30%;
     margin-left:35%;
@@ -11,10 +10,20 @@
     border-radius:45px;
 }
 
+.pas-complet{
+background-color:$no-color;
+}
+
+.complet{
+    background-color:#8FC70C;
+}
+
 .statut-text{
     margin-top:10px;
     margin-bottom:10px;
     font-weight: bold;
+    color:white;
+    margin:auto;
 }
 
 .block-salon{

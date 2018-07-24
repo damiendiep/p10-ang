@@ -49,7 +49,7 @@ const appRoutes: Routes = [
   { path: 'profil-utilisateur', component: ProfilUtilisateurComponent },
   { path: 'salon-interieur', component: SalonInterieurComponent },
   { path: 'creer-salon', component: CreerSalonComponent },
-  { path: 'salon-interieur/1', component: Salon1InterieurComponent },
+  { path: 'salon-interieur/:id', component: Salon1InterieurComponent },
   { path: 'salon-interieur/2', component: Salon2InterieurComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' }
 ];

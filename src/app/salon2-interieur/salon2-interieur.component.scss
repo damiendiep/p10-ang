@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .statut-no{
-    background-color:red;
+    background-color:$no-color;;
     height:50px;
     width:30%;
     margin-left:35%;
@@ -23,10 +23,10 @@
 }
 
 .statut-text{
-    margin-top:20px;
+    margin-top:10px;
     margin-bottom:10px;
     font-weight: bold;
-    text-align: center;
+    color:white;
 }
 
 .block-salon{
@@ -127,4 +127,9 @@ height:50%;
 .rejoindre{
     margin-left:30%;
     background-color:$button-color;
+}
+
+.salon-statut{
+    position: relative;
+    margin-top:30px;
 }

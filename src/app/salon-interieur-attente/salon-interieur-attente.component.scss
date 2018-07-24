@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .statut{
-    background-color:red;
+    background-color:$no-color;
     height:50px;
     width:30%;
     margin-left:35%;
@@ -15,6 +15,7 @@
     margin-top:10px;
     margin-bottom:10px;
     font-weight: bold;
+    color:white;
 }
 
 .block-salon{
@@ -53,7 +54,6 @@ span{
 
 .map{
     height:100%;
-    width:40%;
     display: inline-block;
 }
 

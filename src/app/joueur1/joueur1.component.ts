@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SalonService } from '../services/salon.service';
 
 @Component({
   selector: 'app-joueur1',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Joueur1Component implements OnInit {
 
-  constructor() { }
+  @Input() prenom: string;
+  @Input() photo: string;
+  constructor(private salonService: SalonService) { }
 
   ngOnInit() {
   }

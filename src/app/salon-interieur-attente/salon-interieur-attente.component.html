@@ -1,4 +1,4 @@
-<h2>Salon de Jeu {{salon.id}}</h2>
+<h2>Salon de Jeu {{id}}</h2>
 
 <div class="statut block-shadow">
   <div class="statut-text">En attente de joueurs</div>
@@ -12,11 +12,11 @@
           <h4>Informations</h4>
         </li>
         <li>
-          <span>Sport:</span> {{salon.Sport}}</li>
+          <span>Sport:</span> {{sport}}</li>
         <li>
-          <span>Club:</span> {{salon.Club}}</li>
+          <span>Club:</span> {{club}}</li>
         <li>
-          <span>Date:</span> {{salon.Date}}</li>
+          <span>Date:</span> {{date|date}}</li>
       </ul>
       <a class="waves-effect waves-light btn-large rejoindre" disabled="true">Rejoindre la partie</a>
     </div>
@@ -46,7 +46,7 @@
       <div class="input-field">
         <div id="presentation-joueur" class="materialize-textarea block-shadow">
           <h6>Présentation:</h6>
-          {{salon.description}}
+          {{description}}
         </div>
       </div>
     </div>

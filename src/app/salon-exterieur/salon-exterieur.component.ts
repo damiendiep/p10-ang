@@ -16,15 +16,4 @@ export class SalonExterieurComponent implements OnInit {
   ngOnInit() {
     this.salon.date = new Date(this.salon.date);
   }
-
-  sendToSalon(id: any) {
-    if (id = 1) {
-      const route = "['/salon1-interieur/']";
-    } else if (id = 2) {
-      const route = "['/salon2-interieur/']";
-    } else {
-      const route = "['/salon-interieur/']";
-    }
-    return this.route;
-  }
 }

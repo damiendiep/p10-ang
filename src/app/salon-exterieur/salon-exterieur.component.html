@@ -13,7 +13,7 @@
    <div [ngSwitch]="salon.id">
      <div *ngSwitchCase="1"><a [routerLink]="['/salon-interieur/1']" class="btn waves-effect waves-light btn-voir">Voir</a></div>
      <div *ngSwitchCase="2"><a [routerLink]="['/salon-interieur/2']" class="btn waves-effect waves-light btn-voir">Voir</a></div>
-     <div *ngSwitchDefault><a [routerLink]="['/salon-interieur/']" class="btn waves-effect waves-light btn-voir">Voir</a></div>
+     <div *ngSwitchDefault><a [routerLink]="['/salon-interieur/:id']" class="btn waves-effect waves-light btn-voir">Voir</a></div>
    </div>
   </div>
 </div>
