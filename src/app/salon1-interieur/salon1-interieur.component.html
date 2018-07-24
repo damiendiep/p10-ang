@@ -1,10 +1,10 @@
 <h2>Salon de Jeu {{id}}</h2>
 
-<div class="statut block-shadow pas-complet" *ngIf="!complet">
+<div class="statut block-shadow pas-complet" *ngIf="!rejoindre1">
   <div class="statut-text">En attente de joueurs</div>
 </div>
 
-<div class="statut block-shadow complet" *ngIf="complet">
+<div class="statut block-shadow complet" *ngIf="rejoindre1">
   <div class="statut-text">Ca match!</div>
 </div>
 

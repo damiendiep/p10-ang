@@ -132,9 +132,11 @@ export class SalonService {
     }
 
     public addPlayer(id: number, joueur: any) {
-        // this.listeSalons[id - 1].nbJoueurs += 1;
-        this.listeSalons[id - 1].joueurs.push(joueur);
-        console.log(joueur);
+        if (this.listeSalons[id - 1].joueurs.length < 4) {
+            this.listeSalons[id - 1].nbJoueurs += 1;
+            this.listeSalons[id - 1].joueurs.push(joueur);
+            console.log(joueur);
+        }
     }
 
     public removePlayer(id: number) {

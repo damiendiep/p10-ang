@@ -18,6 +18,11 @@ export class Salon2InterieurComponent implements OnInit {
   nbJoueurs: number;
   description: String;
 
+  joueur = {
+    prenom: 'Olivier',
+    photo: '../../assets/images/olivier.jpg'
+  };
+
   constructor(private salonService: SalonService, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -32,11 +37,12 @@ export class Salon2InterieurComponent implements OnInit {
     this.description = this.salonService.getEventById(+event).description;
   }
   rejoindreSalle() {
+    this.salonService.addPlayer(this.id, this.joueur);
     this.rejoindre2 = true;
-    this.salonService.addPlayer(this.id);
+    console.log(this.rejoindre2);
   }
   quitterSalle() {
-    this.rejoindre2 = false;
     this.salonService.removePlayer(this.id);
+    this.rejoindre2 = false;
   }
 }

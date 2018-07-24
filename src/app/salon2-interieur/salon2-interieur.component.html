@@ -1,8 +1,12 @@
 <h2>Salon de Jeu {{id}}</h2>
 
 <div class="">
-  <div class="statut-text statut-no block-shadow" *ngIf="!rejoindre2"><span class="salon-statut">En attente de joueurs</span></div>
-  <div class="statut-text statut-yes block-shadow" *ngIf="rejoindre2"><span class="salon-statut">Ca match!</span></div>
+  <div class="statut-text statut-no block-shadow" *ngIf="!rejoindre2">
+    <span class="salon-statut">En attente de joueurs</span>
+  </div>
+  <div class="statut-text statut-yes block-shadow" *ngIf="rejoindre2">
+    <span class="salon-statut">Ca match!</span>
+  </div>
 </div>
 
 <div class="block-salon block-shadow">
@@ -25,13 +29,13 @@
     <div class="joueurs-salon">
       <div class="vignettes-joueur">
         <div class="vignette">
-            <app-joueur1></app-joueur1>
+          <app-joueur1></app-joueur1>
         </div>
         <div class="vignette">
-            <app-joueur2></app-joueur2>
+          <app-joueur2></app-joueur2>
         </div>
         <div class="vignette">
-            <app-joueur3></app-joueur3>
+          <app-joueur3></app-joueur3>
         </div>
         <div class="vignette">
           <app-vignette-joueur-inconnu *ngIf="!rejoindre2"></app-vignette-joueur-inconnu>
