@@ -20,12 +20,13 @@ export class Salon1InterieurComponent implements OnInit {
   description: String;
   joueurs: any;
 
-   joueur = {
-    prenom : 'Olivier',
-    photo : '../../assets/images/olivier.jpg'
+  joueur = {
+    prenom: 'Olivier',
+    photo: '../../assets/images/olivier.jpg'
   };
 
-  constructor(private salonService: SalonService, private route: ActivatedRoute, private router: Router) {}
+
+  constructor(private salonService: SalonService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     const event = this.route.snapshot.params['id'];
@@ -38,13 +39,14 @@ export class Salon1InterieurComponent implements OnInit {
     this.nbJoueurs = this.salonService.getEventById(+event).nbJoueurs;
     this.description = this.salonService.getEventById(+event).description;
     this.joueurs = this.salonService.getEventById(+event).joueurs;
-    console.log(this.joueur);
   }
 
   rejoindreSalle() {
-    this.rejoindre1 = true;
     this.salonService.addPlayer(this.id, this.joueur);
-    console.log(this.joueurs);
+    this.rejoindre1 = true;
+    if (this.salonService.listeSalons[1].joueurs.length == 4) {
+      this.complet = true;
+    }
     // if (this.salonService.listeSalons[2].joueurs[4].prenom === 'Olivier') {
     //   const complet = true;
     // }
